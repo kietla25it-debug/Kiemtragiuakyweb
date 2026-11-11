@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Nền Gradient mượt mà */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    color: #2d3748;
+}
+
+/* Card chứa nội dung */
+.custom-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Style cho Table hiện đại */
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0 12px; /* Tách rời các hàng */
+}
+
+.table-custom thead th {
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.table-custom thead th:first-child { border-top-left-radius: 12px; border-bottom-left-radius: 12px; }
+.table-custom thead th:last-child { border-top-right-radius: 12px; border-bottom-right-radius: 12px; }
+
+.table-custom tbody tr {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.table-custom tbody tr td {
+    vertical-align: middle;
+    border: none;
+    padding: 15px;
+}
+
+.table-custom tbody tr td:first-child { border-top-left-radius: 12px; border-bottom-left-radius: 12px; }
+.table-custom tbody tr td:last-child { border-top-right-radius: 12px; border-bottom-right-radius: 12px; }
+
+.table-custom tbody tr:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+/* Ảnh Avatar hình tròn, có viền */
+.avatar-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e2e8f0;
+    padding: 2px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+/* Nút bấm Gradient */
+.btn-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+.btn-gradient-primary:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(118, 75, 162, 0.4);
+}
+
+/* Form Input Đẹp */
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+/* Icon trong Input */
+.input-group-text {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #667eea;
+}
+.input-group .form-control { border-left: none; }
+/* Thanh Navbar (Menu) */
+.custom-navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: 700;
+    color: #2d3748 !important;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+    font-weight: 500;
+    color: #4a5568 !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover, .custom-navbar .nav-link.active {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea !important;
+}
+
+/* Thẻ Thống kê (Stat Cards) */
+.stat-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+.stat-icon.bg-success-gradient {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    box-shadow: 0 4px 15px rgba(56, 239, 125, 0.3);
+}
